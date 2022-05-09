@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <button onClick={()=> setText( data.filter((d =>d.price > 60)))}> Price</button>
-      <button onClick={()=>setText( data.filter((d =>d.price > 60)))}> rate</button>
+      <button onClick={()=>setText( data.filter((d =>d.rating.rate <4)))}> rate</button>
       <button onClick={()=>setText(data.filter(d => d.category == 'jewelery'))}> jewelery</button>
       {text.map((d,index) =>(    
       <Produce 
